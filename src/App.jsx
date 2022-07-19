@@ -25,7 +25,7 @@ function App() {
     <>
       {!enviado && (
         <article className="wrapper">
-          <img src={star} alt="" className="bg-gray-700 p-2 rounded-full" />
+          <img src={star} alt="estrella de color amarillo fuerte" className="bg-gray-700 p-2 rounded-full" />
           <h1 className="text-gray-100 text-3xl my-6"> How did we do? </h1>
           <p className="text-gray-500 mb-10">
             Please let us know how we did with your support request. All
@@ -69,7 +69,7 @@ function App() {
 const Thanks = ({ items, setEnviado }) => {
   return (
     <article className="wrapper">
-      <img src={imgThanks} alt="" className="block mx-auto mb-5" />
+      <img src={imgThanks} alt="celular con pelota y una tarjeta al rededor de el con lineas" className="block mx-auto mb-5" />
       <div className="flex justify-center items-center">
         <p className="text-center pt-2 px-3 p-thanks  rounded-full">
           You selected {items} out of 5
