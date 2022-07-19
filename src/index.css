@@ -25,6 +25,10 @@
   transition: all 0.2s ease-in-out;
 }
 
+.btn-number{
+  background-color: var(--DarkBlue);
+} 
+
 .btn-number:hover {
   background-color: var(--Orange);
 }
@@ -32,7 +36,6 @@
 .p-thanks {
   color: var(--Orange);
   background-color: var(--DarkBlue);
- 
 }
 
 @media screen and (min-width: 375px) {
@@ -49,9 +52,16 @@
   }
 
   .wrapper {
-    background: linear-gradient(180deg, var(--DarkBlue), var(--VeryDarkBlue));
+    background: linear-gradient(165deg, var(--DarkBlue), var(--VeryDarkBlue));
     padding: 1rem;
-    border-radius: 2%;
+    border-radius: 6%;
     width: 85vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    width: 30vw;
+    padding: 2rem;
   }
 }
