@@ -18,10 +18,40 @@
   --VeryDarkBlue: hsl(216, 12%, 8%);
 }
 
-body {
-  margin: 0;
-  font-family: "Overpass", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: var(--VeryDarkBlue);
+/* generales */
+
+.btn-rating {
+  background-color: var(--Orange);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-number:hover {
+  background-color: var(--Orange);
+}
+
+.p-thanks {
+  color: var(--Orange);
+  background-color: var(--DarkBlue);
+ 
+}
+
+@media screen and (min-width: 375px) {
+  body {
+    font-family: "Overpass", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--VeryDarkBlue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 0.1rem);
+  }
+
+  .wrapper {
+    background: linear-gradient(180deg, var(--DarkBlue), var(--VeryDarkBlue));
+    padding: 1rem;
+    border-radius: 2%;
+    width: 85vw;
+  }
 }
