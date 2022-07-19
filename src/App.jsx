@@ -3,26 +3,24 @@ import "./App.css";
 import star from "./images/icon-star.svg";
 import imgThanks from "./images/illustration-thank-you.svg";
 
-const Button = ({ numero }) => {
+function App() {
+  const [enviado, setEnviado] = useState(false);
   const [items, setItems] = useState("");
-  const darNUmero = (numero) => {
-    setItems(numero);
+  const Button = ({ numero }) => {
+    return (
+      <div className="flex justify-center  items-center">
+        <button
+          className="bg-gray-700 h-10 w-10 rounded-full pt-1 text-gray-200 focus:bg-gray-400 btn-number transition-all duration-170"
+          onClick={() => {
+            setItems(numero);
+          }}
+        >
+          {numero}
+        </button>
+      </div>
+    );
   };
 
-  return (
-    <div className="flex justify-center  items-center">
-      <button
-        className="bg-gray-700 h-10 w-10 rounded-full pt-1 text-gray-200 focus:bg-gray-400 btn-number transition-all duration-170"
-        onClick={darNUmero}
-      >
-        {numero}
-      </button>
-    </div>
-  );
-};
-
-function App({ item }) {
-  const [enviado, setEnviado] = useState(false);
   return (
     <>
       {!enviado && (
@@ -96,5 +94,4 @@ const Thanks = ({ items, setEnviado }) => {
     </article>
   );
 };
-
 export default App;
